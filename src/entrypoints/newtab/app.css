@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "@fontsource-variable/inter";
 
 @theme {
 	--color-accent: #f4b8e4;
@@ -7,4 +8,8 @@
 	--color-base: #303446;
 	--color-mantle: #292c3c;
 	--color-crust: #232634;
+}
+
+body {
+	@apply bg-base text-text flex h-screen items-center justify-center overflow-hidden font-[Inter_Variable];
 }
