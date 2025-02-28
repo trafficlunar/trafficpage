@@ -1,7 +1,5 @@
-# WXT + Svelte
+# trafficpage
 
-This template should help get you started developing with Svelte in WXT.
+> a startpage heavily inspired by [\_traichu](https://github.com/Tressley/_traichu)
 
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+// todo
