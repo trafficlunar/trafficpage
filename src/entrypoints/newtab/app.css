@@ -13,3 +13,19 @@
 body {
 	@apply bg-base text-text flex h-screen items-center justify-center overflow-hidden font-[Inter_Variable];
 }
+
+[data-tooltip] {
+	@apply relative z-10;
+}
+
+[data-tooltip]::before {
+	@apply content-[''] absolute left-1/2 -translate-x-1/2 top-full size-0 border-4 border-transparent border-b-accent duration-200 transition ease-out scale-75 opacity-0;
+}
+
+[data-tooltip]::after {
+	@apply absolute left-1/2 -translate-x-1/2 translate-y-2 bg-base border border-accent px-2 py-1 rounded text-sm text-center content-[attr(data-tooltip)] origin-top transition duration-200 ease-out scale-75 opacity-0;
+}
+
+[data-tooltip]:hover {
+	@apply after:scale-100 before:scale-100 after:opacity-100 before:opacity-100;
+}
