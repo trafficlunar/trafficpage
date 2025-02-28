@@ -5,7 +5,7 @@
   setInterval(() => {
     const date = new Date();
 
-    dateValue = date.toLocaleDateString("en-UK", { day: "numeric", month: "short", year: "numeric" });
+    dateValue = date.toLocaleDateString("en-UK", { weekday: "short", day: "numeric", month: "short", year: "numeric" });
     clockValue = date.toLocaleTimeString("en-US").toLowerCase();
   }, 10);
 </script>
