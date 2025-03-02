@@ -2,6 +2,7 @@
 	import Clock from "@/lib/Clock.svelte";
 	import IconBookmarks from "@/lib/IconBookmarks.svelte";
 	import SearchBar from "@/lib/SearchBar.svelte";
+	import Settings from "@/lib/Settings.svelte";
 </script>
 
 <Clock />
@@ -10,3 +11,5 @@
   <IconBookmarks />
 	<SearchBar />
 </main>
+
+<Settings />
