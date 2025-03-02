@@ -14,6 +14,10 @@ body {
 	@apply bg-base text-text flex h-screen items-center justify-center overflow-hidden font-[Inter_Variable];
 }
 
+.button {
+	@apply flex gap-1 bg-text text-base p-1 pr-2 rounded cursor-pointer transition duration-200 hover:bg-text/80 active:scale-95;
+}
+
 [data-tooltip] {
 	@apply relative z-10;
 }
